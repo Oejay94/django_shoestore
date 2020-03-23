@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import ShoeType, ShoeColor, Shoe
+
+admin.site.register(Shoe)
+admin.site.register(ShoeType)
+admin.site.register(ShoeColor)

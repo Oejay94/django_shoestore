@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Manufacturer
+
+def manufacturer_view(request):
+    html = 'manufacturer.html'
+    return render(request, html, {'mans': Manufacturer.objects.all()})
