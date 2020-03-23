@@ -2,6 +2,8 @@ from django.db import models
 
 from manufacturer.models import Manufacturer
 
+### You rode on the back of a Forest Elephant 
+
 class ShoeType(models.Model):
     style = models.CharField(max_length=20)
 
